@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <title>Каталог</title>
+</head>
+
+<body>
+
+<header>
+<nav>
+<ul>
+<li><a href="index.html">Главная</a></li>
+<li><a href="catalog.html">Каталог</a></li>
+</ul>
+</nav>
+</header>
+
+<hr>
+
+<h1>Каталог</h1>
+
+<select id="filter">
+<option value="all">Все</option>
+<option value="domestic">Внутренние</option>
+<option value="international">Международные</option>
+</select>
+
+<div class="product" data-price="5000" data-category="domestic">
+<a href="moscow.html">
+<img src="images/moscow.jpg" alt="Москва. Внуково" width="200" title="Москва. Внуково">
+</a>
+<p>Москва (Внуково)</p>
+<button class="add">Добавить</button>
+</div>
+
+<div class="product" data-price="4000" data-category="domestic">
+<a href="tyumen.html">
+<img src="images/tyumen.jpg" alt="Тюмень. Рощино" width="200" title="Тюмень. Рощино">
+</a>
+<p>Тюмень (Рощино)</p>
+<button class="add">Добавить</button>
+</div>
+
+<div class="product" data-price="7000" data-category="international">
+<a href="spb.html">
+<img src="images/saint_petersbug.jpg" alt="Санкт-Петербург. Пулково" width="200" title="Санкт-Петербург. Пулково">
+</a>
+<p>Санкт-Петербург (Пулково)</p>
+<button class="add">Добавить</button>
+</div>
+
+<hr>
+
+<h2>Корзина</h2>
+<div id="cart"></div>
+<p id="total">Итого: 0</p>
+
+<button id="pay">Оплатить</button>
+<button id="clear">Очистить</button>
+
+<hr>
+
+<footer>
+<p>&copy; Все права защищены</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

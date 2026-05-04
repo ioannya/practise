@@ -1,0 +1,56 @@
+/*ФОН СТРАНИЦ*/
+body { 
+    background-color: rgb(202, 241, 255);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/*МЕНЮ САЙТА*/
+ul { /*убрать маркеры списка*/
+    list-style: none;
+}
+
+ul li a {
+    color: blue;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+/*Заголовки разделов*/
+h2 {
+    color: black;
+    font-size: 18px;
+    font-weight: 400;
+    background-color: antiquewhite;
+}
+
+
+/*Краткое описание товара*/
+.short-description {
+    color: rgb(92, 80, 80);
+    font-size: 14px;
+    font-style: italic;
+    line-height: 16px;
+}
+
+
+/*Подробное описание товара*/
+.full-description {
+    color: rgb(50,50,50);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+
+
+/*Характеристики товара*/
+.features {
+    list-style-type: square;
+}
+
+.product {
+    margin-bottom: 20px;
+}
