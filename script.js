@@ -1,4 +1,4 @@
-let cart = [];
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
 const buttons = document.querySelectorAll(".add");
 const cartDiv = document.querySelector("#cart");
@@ -43,6 +43,7 @@ const renderCart = () => {
     });
 
     updateTotal();
+    localStorage.setItem("cart", JSON.stringify(cart));
 };
 
 // сумма
@@ -83,3 +84,4 @@ filter.addEventListener("change", () => {
         }
     });
 });
+renderCart();
